@@ -213,7 +213,7 @@ def generar_indice_final(ruta_destino):
         flow.append(Paragraph(f"<a href='{f}'>{nombre}</a>", styles['Normal']))
         flow.append(Spacer(1, 6))
     flow.append(Spacer(1, 24))
-    flow.append(Paragraph("<para align=center>2025 (cc) IndiceLexnet</para>", copyright_style))
+    flow.append(Paragraph("<para align=center>Índice generaado por LexnetReady - MIT-TAL license. 2025, José Carlos Rueda (jcrueda.com).</para>", copyright_style))
     doc.build(flow)
 
 
@@ -286,12 +286,12 @@ def on_tree_click(event):
 
 # --- MAIN GUI ---
 root = tk.Tk()
-root.title("LexnetReady — Multiplataforma PDF/A + Firma + Índice")
+root.title("LexnetReady — Conversión + PDF/A + OCR + Firma + Índice")
 root.geometry("850x640")
 
 lbl_copy = tk.Label(
     root,
-    text=f"© 2025 José Carlos Rueda Álvarez — Bandua Legal | LexnetReady v4.0 ({SO.upper()})",
+    text=f"© 2025 José Carlos Rueda — Bandua Legal | LexnetReady v4.0 ({SO.upper()})",
     fg="gray40",
     font=("Segoe UI", 9)
 )
