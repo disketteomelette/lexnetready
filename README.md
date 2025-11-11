@@ -6,6 +6,8 @@ LexnetReady supera los requisitos mínimos establecidos por ley para la preparac
 
 CONVERSIÓN PDF --> PDF/A --> OCR --> FIRMA --> VERIFICACIÓN --> ÍNDICE
 
+LICENCIA MIT-TAL: https://github.com/disketteomelette/MIT-TAL
+
 ---
 
 ## ✅ Qué hace concretamente LexnetReady
