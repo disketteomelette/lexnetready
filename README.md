@@ -1,12 +1,15 @@
-# LexnetReady — Requisitos e Instalación
+# LexnetReady
 
-**LexnetReady** automatiza la preparación de documentos para su presentación en la plataforma LexNET (PDF/A, OCR, índice y firma digital con AutoFirma) en cumplimiento de toda la normativa establecida a tal efecto. Está creado por José Carlos Rueda, abogado de Bandua Legal. 
+**LexnetReady** automatiza la preparación de documentos para su presentación en la plataforma LexNET (PDF/A, OCR, índice y firma digital con AutoFirma) en cumplimiento de toda la normativa establecida a tal efecto (Real Decreto 1065/2015 de 27 de noviembre). Está creado por José Carlos Rueda, abogado de Bandua Legal.  
 
-LexnetReady supera los requisitos mínimos establecidos por ley para la preparación de escritos a presentar en Lexnet. Le permite crear una carpeta con la demanda, documentos (en CUALQUIER formato, pues él se encargará de pasarlos a PDF) y convertirla lista para presentar. Además de todo lo anterior, genera un archivo de índice interactivo ("documento 0") también exigido por la normativa y que pocos abogados/procuradores cumplen. 
+LexnetReady no sólo iguala, sino que **supera los requisitos mínimos** establecidos por ley para la preparación de escritos a presentar en Lexnet. Le permite crear una carpeta con la demanda, documentos (en CUALQUIER formato, pues él se encargará de pasarlos a PDF) y convertirla lista para presentar. Además de todo lo anterior, genera un archivo de índice interactivo ("documento 0") también exigido por la normativa.
 
 CONVERSIÓN PDF --> PDF/A --> OCR --> FIRMA --> VERIFICACIÓN --> ÍNDICE
 
 LICENCIA MIT-TAL: https://github.com/disketteomelette/MIT-TAL
+
+**ADVERTENCIA: El uso de este software es bajo la exclusiva responsabilidad del usuario. El autor no asume ninguna responsabilidad por daños, pérdidas o rechazos de presentaciones ante LexNET derivados directa o indirectamente del uso de este programa.
+Es responsabilidad del usuario comprobar individualmente cada archivo generado—su contenido, firma, formato PDF/A, integridad—antes de su envío. Este programa se proporciona «tal cual» sin garantías de ningún tipo, explícitas o implícitas.**
 
 ---
 
@@ -24,30 +27,19 @@ LICENCIA MIT-TAL: https://github.com/disketteomelette/MIT-TAL
 
 ## 🕒 Beneficio real en despachos
 
-> Un envío típico de 10 documentos (mezcla de Word, imágenes, PDF sin OCR) manual podría implicar: preparar cada archivo, exportar a PDF/A, revisar OCR, generar índice, firmar cada documento, verificar y borrar intermedios → entre **45 y 90 minutos**.  
-> Con LexnetReady, ese mismo envío puede realizarse en **menos de 5 minutos**, incluyendo generación de índice, firma selectiva y verificación automática. Esto se traduce en **decenas de horas al año** por abogado/libro, tiempo que se puede dedicar al asesoramiento jurídico.  
-Además, reduce el coste oculto del riesgo de rechazo o de tener que rehacer un envío por fallo técnico.
+> La preparación de 10 documentos (mezcla de Word, imágenes, PDF sin OCR) manual podría implicar: preparar cada archivo, exportar a PDF/A, OCR, generar índice, firmar cada documento, verificar → entre **20 y 30 minutos**.  
+> Con LexnetReady, ese mismo envío puede realizarse en **menos de 2 minutos**, incluyendo generación de índice, firma selectiva y verificación automática. Esto se traduce en **decenas de horas al año**, tiempo que se puede dedicar al asesoramiento jurídico.  Además, reduce el coste oculto del riesgo de rechazo o de tener que rehacer un envío por fallo técnico.
 
 ---
 
 ## 🚀 Principales bondades
 
-* **Ahorro de tiempo significativo**: en lugar de convertir manualmente, revisar si es PDF/A + OCR, generar índice, firmar y verificar uno por uno, todo se realiza en un solo flujo. Un proceso que antes podía llevar **30-60 minutos por envío** (dependiendo del número de documentos) ahora puede realizarse en **menos de 5 minutos**, liberando al abogado para tareas de mayor valor.  
-* **Reducción de errores y rechazos**: puesto que el sistema automatiza los formatos obligatorios (PDF/A + OCR + firma), minimiza los riesgos de que el envío sea rechazado por no cumplir requisitos técnicos. 
+* **Ahorro de tiempo significativo**: en lugar de convertir manualmente, revisar si es PDF/A + OCR, generar índice, firmar y verificar uno por uno, todo se realiza en un solo flujo.  
+* **Reducción de errores y rechazos**: puesto que el sistema automatiza los formatos obligatorios (PDF/A + OCR + firma) minimiza los riesgos de que el envío sea rechazado por no cumplir requisitos técnicos. 
 * **Versatilidad multiplataforma**: Windows, Linux y macOS son soportados gracias a detección automática de rutas y comandos, lo que permite desplegar en distintos entornos sin reescribir el flujo.  
 * **Selección flexible de firma**: no todos los anexos requieren firma digital; con LexnetReady usted decide qué documentos firmas y cuáles solo pasan por conversión, manteniendo control y simplificando los anexos que no requieren firma.  
 * **Gestión de documentos optimizada**: la carpeta de envío única (“LEXNET_READY”) contiene solo los archivos finales listos para presentación, lo que reduce desorden, elimina intermedios y facilita el envío al buzón LexNET.
-
----
-
-## 🔧 Público objetivo
-
-LexnetReady está orientado a despachos de abogados o procuradores que:
-- Presentan con regularidad escritos y documentos en LexNET.  
-- Quieren reducir tiempos operativos y dedicar menos personal a tareas técnicas.  
-- Necesitan asegurar que sus envíos cumplen los requisitos legales y técnicos (PDF/A + OCR + firma).  
-- Buscan centralizar y sistematizar su flujo documental en un solo botón.
-
+* **Código libre**: LexnetReady es una utilidad gratuita y open source, permitiendo su integración en otros programas (incluso comerciales) con el único requisito de avisar al autor e incluir la licencia MIT-TAL en el producto final.
 
 ---
 
@@ -59,14 +51,13 @@ LexnetReady está orientado a despachos de abogados o procuradores que:
 4. Verifique en la carpeta creada `LEXNET_READY` que solo estén los archivos finales listos para presentación.  
 5. Suba al buzón LexNET.
 
-ATENCIÓN: LEXNETREADY NO GENERA FIRMA VISIBLE. Esto quiere decir que sus documentos estarán firmados digitalmente pero no mostrará ningún estampado, pero será comprobable en cualquier visor de PDF. La normativa no exige este estampado.
+**ATENCIÓN: LEXNETREADY NO GENERA FIRMA VISIBLE.** Esto quiere decir que sus documentos estarán firmados digitalmente pero no mostrará ningún estampado, pero será comprobable en cualquier visor de PDF (la normativa no exige firma visible).
 
 ---
 
 ## Requisitos adicionales (dependencias)
 
-LexnetReady es muy eficaz, pero depende de diversos programas externos.  
-Para facilitar su uso, existen instaladores preparados para Windows y Linux.
+LexnetReady es muy eficaz, pero depende de diversos programas externos. Para facilitar su uso, existen instaladores preparados para Windows y Linux.
 
 ### Windows  
 - Haga clic derecho en `instalar-windows.bat` y seleccione **“Ejecutar como administrador”**.  
@@ -102,7 +93,5 @@ Sé que parece mucho… pero instalar estas dependencias sólo ha de hacerse una
 ## Tras instalar las dependencias...
 
 ¡Ya está listo para ejecutar! Ejecute `python3 lexnetready.py` en la carpeta de la aplicación. 
-
 Para usuarios en Windows, puede ejecutar el archivo (doble click) en "LexnetReadyWindows.bat". 
-
 Si tiene dudas, abra una `issue` en este repositorio de github y estaré encantado de ayudar.
